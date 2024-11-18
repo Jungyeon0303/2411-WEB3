@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋아하는 계절</title>
+</head>
+<body>
+    <script>
+        // 사용자에게 어떤 계절을 좋아하는지 물어본다.
+        // 받아온 값이 봄이라면 '봄을 좋아하는 당신! 당신에게 꽃향기가 납니다'
+        // 여름이라면 '여름 휴가로 시원한 바다는 어때요?'
+        // 가을이라면 '낙엽이 떨어지는 낭만의 계절이죠~'
+        // 겨울이라면 '눈사람을 만들고 썰매를 탈 수 있는 계절!!'
+
+        let likeSeason = prompt ("당신은 어떤 계절을 가장 좋아하나요?");
+
+        if (likeSeason == "봄") {
+            document.write ("봄을 좋아하는 당신! 당신에게 꽃향기가 납니다");
+        } else if (likeSeason == "여름") {
+            document.write ("여름엔 시원한 바다로");
+        } else if (likeSeason == "가을") {
+            document.write ("낙엽이 떨어지는 낭만의 계절입니다");
+        } else if (likeSeason == "겨울") {
+            document.write ("눈사람을 만들고 핫초코가 맛있는 계절");
+        } else {
+            document.write ("사계절 내내 언제나 좋아요");
+        }
+    </script>
+</body>
+</html>
