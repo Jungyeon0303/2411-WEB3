@@ -14,19 +14,34 @@
         // 2분기 판매량 : 1300
         // 3분기 판매량 : 1400
 
-        let sales1 = 1200;
-        let sales2 = 1300;
-        let sales3 = 1400;
-        let total = Number(sales1) + Number(sales2) + Number(sales3)
-        let average = total / 3
-        console.log(average); 
+        // 내 풀이
+        // let sales1 = 1200;
+        // let sales2 = 1300;
+        // let sales3 = 1400;
+        // let total = Number(sales1) + Number(sales2) + Number(sales3)
+        // let average = total / 3
+        // console.log(average); 
         
         
-        let sales4 = prompt("4분기 판매량을 입력 해 주세요");
+        // let sales4 = prompt("4분기 판매량을 입력 해 주세요");
 
-        let result = sales4 > average ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+        // let result = sales4 > average ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
 
-        document.write(result);
+        // document.write(result);
+
+
+        // 강사님 마크업
+        let q = prompt("4분기 판매량은 얼마입니까?");
+        let msg1 = "판매량이 평균 이상입니다.";
+        let msg2 = "판매량이 평균 미달입니다.";
+
+        let avg = (1200 + 1300 + 1400) / 3;
+        console.log(avg);
+
+        let result = q >= avg ? msg1 : msg2;
+        document.write()
+
+
     </script>
 </body>
 </html>
