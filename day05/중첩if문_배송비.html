@@ -19,17 +19,17 @@
         */
 
 
-        let cost = prompt ("구매금액을 입력해주세요");
-        let member = confirm ("쇼핑몰 회원인가요?");
+        let cost = prompt ("구매금액을 입력해주세요", "숫자만 입력 해 주세요.");
+        let member = confirm ("쇼핑몰 회원이신가요?");
 
-        if (cost > 100000) {
-            document.write ("사은품이 제공됩니다.");
+        if (cost >= 100000) {
+            document.write ("10만원 이상 구매로 사은품이 제공됩니다.<br>");
             if (member){
-                document.write (" 배송비가 무료입니다.");
+                document.write ("5만원 이상 구매 회원은 배송비가 무료입니다.");
             } else {
-                document.write ("사은품이 제공됩니다. 비회원은 배송비 5,000원이 부과됩니다.");
+                document.write ("비회원은 배송비 5,000원이 부과됩니다. <a href='#'> 회원가입하러가기</a>4");
             }
-        } else if (cost > 50000) {
+        } else if (cost >= 50000) {
             if (member) {
                 document.write ("배송비가 무료입니다.");
             } else {
