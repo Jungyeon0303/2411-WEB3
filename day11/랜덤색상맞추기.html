@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤색상맞추기</title>
+</head>
+<body>
+    <script>
+        // switch 말고  if문 사용하기
+        // 색은 빨주노초파
+        // 컴퓨터의 값을 각지고 문자화 시킬게요
+
+        document.write("<h1>랜덤색상맞추기 게임</h1>")
+
+        let usercolor = prompt("빨강,주홍,노랑,초록,파랑 중 원하는 색깔을 써주세요");
+        
+        let randomNum = Math.ceil(Math.random()*5);
+        let computerColor;
+
+        if(randomNum === 1){
+            computerColor = "빨강"
+        } else if(randomNum === 2){
+            computerColor = "주홍"
+        }
+        else if(randomNum === 3){
+            computerColor = "노랑"
+        }
+        else if(randomNum === 4){
+            computerColor = "초록"
+        }
+        else if(randomNum === 5){
+            computerColor = "파랑"
+        } else {
+            document.write("잘못입력하셨습니다.")
+        }
+
+        if(usercolor === computerColor){
+            document.write("추카추카 컴퓨터가 생각하는 값을 맞췄다!");
+        } else {
+            document.write("아숩아숩 컴퓨터가 생각하는 값은" + computerColor + "색!");
+        }
+    </script>
+</body>
+</html>
